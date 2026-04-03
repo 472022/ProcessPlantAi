@@ -54,13 +54,9 @@ const Navbar = ({ onRequestDemo }: { onRequestDemo: () => void }) => {
       <div className={`bg-slate-900/95 text-slate-300 py-2 border-b border-white/5 transition-all duration-300 ${isScrolled ? 'h-0 py-0 opacity-0 overflow-hidden' : 'h-auto opacity-100'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-end items-center text-[11px] font-medium tracking-wider uppercase">
           <div className="flex items-center gap-6">
-            <a href="mailto:info@processplantai.org.in" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
+            <a href="mailto:info@processplantai.com" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
               <Mail className="w-3 h-3 text-brand-accent" />
-              <span>processplantai.org.in</span>
-            </a>
-            <a href="tel:+918999143978" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
-              <Phone className="w-3 h-3 text-brand-accent" />
-              <span>+91 8999143978</span>
+              <span>info@processplantai.com</span>
             </a>
           </div>
         </div>
@@ -601,16 +597,9 @@ const Contact = ({ onConsultation }: { onConsultation: () => void }) => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Us",
-      value: "processplantai.org.in",
-      href: "mailto:info@processplantai.org.in",
+      value: "info@processplantai.com",
+      href: "mailto:info@processplantai.com",
       description: "Our team will respond within 24 hours."
-    },
-    {
-      icon: <Phone className="w-6 h-6" />,
-      title: "Call Us",
-      value: "+91 8999143978",
-      href: "tel:+918999143978",
-      description: "Available Mon-Fri, 9am - 6pm IST"
     },
     {
       icon: <MapPin className="w-6 h-6" />,
@@ -808,7 +797,7 @@ const LeadModal = ({ isOpen, onClose, title }: { isOpen: boolean, onClose: () =>
                 <CheckCircle2 className="w-10 h-10" />
               </div>
               <h4 className="text-xl font-bold text-slate-900 mb-2">Request Sent!</h4>
-              <p className="text-slate-500">Thank you for your interest. Our team will reach out to you shortly at info@processplantai.org.in.</p>
+              <p className="text-slate-500">Thank you for your interest. Our team will reach out to you shortly at info@processplantai.com.</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-4">
